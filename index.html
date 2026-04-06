@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MC Jareld Barra Tamunday - Resume</title>
+  <style>
+    :root{
+      --ink:#0f172a;
+      --muted:#475569;
+      --line:#e2e8f0;
+      --accent:#2f49ff;
+      --chip-bg:#f8fafc;
+      --chip-bd:#e2e8f0;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:#ffffff;
+      color:var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      line-height:1.35;
+    }
+    .page{
+      max-width: 1000px;
+      margin: 28px auto;
+      padding: 0 18px 28px;
+    }
+
+    /* Header */
+    .header{
+      display:grid;
+      grid-template-columns: 1fr 168px;
+      gap: 18px;
+      align-items:start;
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--line);
+    }
+    .name{
+      font-size: 40px;
+      letter-spacing: -0.5px;
+      line-height:1.05;
+      margin: 0;
+      font-weight: 800;
+    }
+    .tagline{
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .head-right{
+      display:flex;
+      justify-content:flex-end;
+    }
+    .photo{
+      width: 148px;
+      height: 148px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      object-fit: cover;
+      background: #f1f5f9;
+    }
+
+    /* Contact */
+    .contact{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px 22px;
+      padding: 14px 0 6px;
+    }
+    .contact-col{
+      display:flex;
+      flex-direction:column;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .contact a{ color: var(--muted); text-decoration:none; border-bottom:1px dotted #cbd5e1; }
+    .contact a:hover{ color: var(--ink); border-bottom-color: var(--ink); }
+
+    /* Main grid */
+    .main{
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 22px;
+      padding-top: 10px;
+    }
+
+    .section{
+      padding-top: 12px;
+    }
+    .section-title{
+      margin: 0 0 10px;
+      font-size: 12px;
+      letter-spacing: 2.2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .summary{
+      color: var(--ink);
+      font-size: 14px;
+      margin: 0 0 4px;
+    }
+
+    .divider{
+      border: none;
+      border-top: 2px solid var(--line);
+      margin: 14px 0 0;
+    }
+
+    /* Projects */
+    .project{
+      margin: 0 0 14px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--line);
+    }
+    .project:last-child{
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .proj-title{
+      margin: 0;
+      font-size: 16px;
+      font-weight: 800;
+    }
+    .proj-role{
+      margin: 3px 0 0;
+      font-weight: 700;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    ul{
+      margin: 10px 0 0 18px;
+      padding: 0;
+      color: var(--ink);
+      font-size: 14px;
+    }
+    li{ margin: 6px 0; }
+
+    /* Right column */
+    .right .block{
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--line);
+      margin-bottom: 14px;
+    }
+    .right .block:last-child{
+      border-bottom:none;
+      margin-bottom:0;
+      padding-bottom:0;
+    }
+
+    .list{
+      margin: 0;
+      padding-left: 18px;
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap: 10px;
+    }
+    .chip{
+      border: 1px solid var(--chip-bd);
+      background: var(--chip-bg);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      color: var(--ink);
+      font-weight: 700;
+      white-space:nowrap;
+    }
+
+    /* Education */
+    .edu-title{
+      margin: 0;
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .edu-meta{
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    /* Print */
+    @media print{
+      body{ background:#fff; }
+      .page{ margin: 0; max-width:none; padding: 0; }
+      .header{ border-bottom: 2px solid #d1d5db; }
+      .project{ border-bottom: 2px solid #d1d5db; }
+      .right .block{ border-bottom: 2px solid #d1d5db; }
+      a{ text-decoration:none; border-bottom:none; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="header">
+      <div>
+        <h1 class="name">MC Jareld Barra Tamunday</h1>
+        <p class="tagline">IT Student (2nd Year) | Virtual Assistant (Entry-Level) | Admin Support / Data Entry | From the Philippines</p>
+
+        <div class="contact">
+          <div class="contact-col">
+            <div>Balanga City, Bataan, Philippines • From the Philippines</div>
+            <div>Email: <a href="mailto:mcjareld123@gmail.com">mcjareld123@gmail.com</a></div>
+            <div>GitHub: <a href="https://github.com/mcjareldbarratamunday-dev" target="_blank" rel="noreferrer">github.com/mcjareldbarratamunday-dev</a></div>
+            <div>Instagram: <a href="https://instagram.com/mcieyy_" target="_blank" rel="noreferrer">instagram.com/mcieyy_</a></div>
+          </div>
+
+          <div class="contact-col">
+            <div>Phone: 09385121030</div>
+            <div>Portfolio: <a href="https://mcjareldbarratamunday-dev.github.io/mcjareld-portfolio-" target="_blank" rel="noreferrer">mcjareldbarratamunday-dev.github.io/mcjareld-portfolio</a></div>
+            <div>Facebook: <a href="https://facebook.com/mcccieyyy" target="_blank" rel="noreferrer">facebook.com/mcccieyyy</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="head-right">
+        <!-- Replace src with your photo path, e.g. assets/profile.jpg -->
+        <img class="photo" src="assets/resume-photo2.jpg" alt="Profile photo (add src)" />
+      </div>
+    </div>
+
+    <div class="main">
+      <!-- LEFT COLUMN -->
+      <div class="left">
+        <section class="section">
+          <h2 class="section-title">Professional Summary</h2>
+          <p class="summary">
+            Motivated IT student (2nd year) based in the Philippines, transitioning into Virtual Assistant and Admin Support roles.
+            Organized and detail-oriented with strong communication skills and a willingness to learn new tools and processes.
+            Comfortable with data handling, online research, file organization, and supporting tasks with accuracy and consistency.
+            Reliable in remote work settings and focused on delivering clear, client-ready outputs on time.
+          </p>
+          <hr class="divider" />
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Projects</h2>
+
+          <div class="project">
+            <h3 class="proj-title">Personal Portfolio Website (Documentation & Organization Project)</h3>
+            <div class="proj-role">Self-Managed Project</div>
+            <ul>
+              <li>Organized personal information, links, and project details into a clear, easy-to-navigate format.</li>
+              <li>Maintained consistent formatting and updated content to keep information accurate and presentable.</li>
+              <li>Published online for quick sharing, demonstrating ownership, reliability, and attention to detail.</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3 class="proj-title">Responsive Landing Page (Formatting & Quality Check Practice)</h3>
+            <div class="proj-role">Remote Task Practice</div>
+            <ul>
+              <li>Practiced following layout requirements and checking details like spacing, readability, and consistency.</li>
+              <li>Strengthened focus on accuracy and repeatable processes—useful for admin support and data entry tasks.</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3 class="proj-title">Data Handling Mini System (CRUD Practice Project)</h3>
+            <div class="proj-role">Student Project (Data Accuracy)</div>
+            <ul>
+              <li>Practiced structured data entry and record updates using forms (create, update, and delete records).</li>
+              <li>Focused on accuracy, consistency, and organized data—transferable to spreadsheets and admin workflows.</li>
+            </ul>
+          </div>
+
+          <hr class="divider" />
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Education</h2>
+          <p class="edu-title">BS in Information Technology (BSIT) — 2nd Year</p>
+          <p class="edu-meta">Asia Pacific of Advanced Studies, Balanga City, Bataan | 2026 – 2027</p>
+        </section>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <aside class="right">
+        <div class="block">
+          <h2 class="section-title">Virtual Assistant Skills</h2>
+          <ul class="list">
+            <li>Data entry and accuracy checking</li>
+            <li>Email support and professional written communication</li>
+            <li>Internet research and information summarizing</li>
+            <li>File organization and document formatting</li>
+            <li>Time management and task prioritization (remote)</li>
+            <li>Willingness to learn new tools and follow SOPs</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h2 class="section-title">Tools &amp; Basic Tech</h2>
+          <div class="chips">
+            <span class="chip">Google Docs</span>
+            <span class="chip">Google Sheets</span>
+            <span class="chip">Email Management</span>
+            <span class="chip">Calendar Management</span>
+            <span class="chip">Internet Research</span>
+            <span class="chip">File Organization</span>
+            <span class="chip">Data Entry</span>
+            <span class="chip">Typing &amp; Formatting</span>
+            <span class="chip">Windows PC</span>
+            <span class="chip">Online Tools (Zoom/Meet)</span>
+            <span class="chip">Task Tracking</span>
+            <span class="chip">AI-assisted workflow</span>
+          </div>
+        </div>
+
+        <div class="block">
+          <h2 class="section-title">Soft Skills</h2>
+          <ul class="list">
+            <li>Problem-solving</li>
+            <li>Fast learner / self-learning</li>
+            <li>Communication</li>
+            <li>Teamwork</li>
+            <li>Time management</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
